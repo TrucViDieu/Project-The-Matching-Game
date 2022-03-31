@@ -28,11 +28,6 @@ Khi nào code ok, chạy tốt thì merge từ branche lên master.
 HANDLE hConsoleColor = GetStdHandle(STD_OUTPUT_HANDLE);
 
 //void SignUp_LogIn(); // dùng lúc mới vào game, hàm này có thể gồm 2 hàm nhỏ: đăng kí, đăng nhập
-<<<<<<< Updated upstream
-
-void generateBoard(cell Board[][8]);
-=======
->>>>>>> Stashed changes
 
 void chooseSizeOfTable(int &Rows, int &Cols);
 void generateBoard(cell** &Board, int Rows, int Cols);
@@ -57,11 +52,6 @@ void movingEffects(cell** Board, int Rows, int Cols);
 
 int main()
 {
-<<<<<<< Updated upstream
-    cell Board[8][8];
-
-    printBoard(Board);
-=======
     cell** Board;
     int Rows, Cols;
     chooseSizeOfTable(Rows, Cols);
@@ -105,7 +95,6 @@ void chooseSizeOfTable(int &Rows, int &Cols)
         }
     }
 
->>>>>>> Stashed changes
 }
 
 void print_UpperHorizontalLine(cell** Board, int Row, int Cols, int M_Row, int M_Col)
@@ -281,8 +270,6 @@ void generateBoard(cell** &Board, int Rows, int Cols)
         }
     }
 }
-<<<<<<< Updated upstream
-=======
 void movingEffects(cell** Board, int Rows, int Cols)
 {
     char keyboard;
@@ -339,4 +326,3 @@ void movingEffects(cell** Board, int Rows, int Cols)
         flag--;
     }
 }
->>>>>>> Stashed changes
